@@ -1,0 +1,29 @@
+/* LoginForm.css */
+.login-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    animation: slideIn 0.5s ease-out;
+}
+
+.login-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 2rem;
+}
+
+.login-back {
+    margin-top: 1rem;
+    color: #3b82f6;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.login-back:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
