@@ -14,7 +14,7 @@ const LogoAnimation = () => {
         transition={{ duration: 1 }}
         className="logo-text"
       >
-        CoolTower AI
+        CoolingTower AI
       </motion.div>
       <motion.button
         whileHover={{ scale: 1.1 }}

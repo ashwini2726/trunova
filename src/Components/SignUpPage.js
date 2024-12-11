@@ -15,21 +15,22 @@ const SignUpPage = () => {
       <div className="preview-section">
         <motion.div className="preview-carousel">
           <motion.img
-            src="/api/placeholder/800/600"
-            alt="Dashboard"
+            src="'
+            alt="Dashboard
             className="preview-image"
             animate={{ opacity: [1, 0] }}
             transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
           />
           <motion.img
-            src="/api/placeholder/800/600"
+            src=""
             alt="Queries"
             className="preview-image"
-            animate={{ opacity: [0, 1, 0] }}
+            animate={{ opacity: [0, 1, 0] }
+        }
             transition={{ duration: 3, repeat: Infinity, repeatType: "reverse", delay: 3 }}
           />
           <motion.img
-            src="/api/placeholder/800/600"
+            src=""
             alt="Graph"
             className="preview-image"
             animate={{ opacity: [0, 1] }}

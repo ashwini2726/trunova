@@ -1,0 +1,208 @@
+/* Background Color of SearchBar Page */
+body {
+  background: linear-gradient(135deg, rgba(173, 216, 230, 0.5), rgba(176, 224, 230, 0.5), rgba(135, 206, 250, 0.5)); /* Light Blue Gradient */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section (Top Bar) */
+.header {
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px; /* Reduced height */
+  padding: 5px 15px; /* Smaller padding for compactness */
+  background: rgba(255, 255, 255, 0.8); /* Slightly opaque for better visibility */
+  backdrop-filter: blur(10px); /* Glass effect */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 102;
+}
+
+/* Logo inside the header */
+.logo {
+  font-size: 14px; /* Reduced font size */
+  font-weight: bold;
+  cursor: pointer;
+  color: #444;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logo:hover {
+  color: #007bff;
+}
+
+/* Icons in the header section */
+.icons {
+  display: flex;
+  gap: 15px; /* Reduced spacing between icons */
+}
+
+.icon {
+  font-size: 16px; /* Smaller icon size */
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #007bff;
+}
+
+/* Add spacing below the fixed header to prevent overlap with content */
+.main-section {
+  margin-top: 80px; /* Space between the top bar and the questions */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px; /* Space between questions */
+}
+
+/* Question Container */
+.question {
+  background-color: #f3e6ff;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Answer Container */
+.answer-container {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  gap: 20px;
+}
+
+.answer-container.left-aligned {
+  justify-content: flex-start;
+}
+
+.answer-container.center-aligned {
+  justify-content: center;
+  text-align: center;
+}
+
+.answer-content {
+  flex: 1;
+}
+
+.answer {
+  background-color: #d4edda;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-chart {
+  font-size: 16px;
+  color: #999;
+}
+
+/* Bottom Search Bar */
+.search-bar-bottom {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.search-button, .send-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover, .send-button:hover {
+  background: #0056b3;
+}
+
+/* Search and Send Buttons Styling */
+.search-button,
+.send-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 24px;
+  color: #007bff;
+}
+
+.search-button:hover,
+.send-button:hover {
+  color: #0056b3;
+}
+
+/* Smooth Transitions for button and input */
+button,
+input {
+  transition: all 0.3s ease;
+}
+
+/* History Section */
+.history-container {
+  position: fixed;
+  top: 40px; /* Adjusted for smaller header */
+  left: -300px; /* Hidden by default */
+  height: calc(100% - 40px); /* Adjusted for reduced header height */
+  width: 300px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px); /* Glass effect */
+  transition: left 0.4s ease-in-out;
+  box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.2);
+  z-index: 101;
+}
+
+.history-container.open {
+  left: 0; /* Slide into view */
+}
+
+.history {
+  padding: 20px;
+}
+
+.history h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.history-content {
+  font-size: 14px;
+  color: #555;
+}

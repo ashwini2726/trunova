@@ -1,0 +1,64 @@
+[
+  {
+    "question": "How does the cooling tower efficiency vary with temperature changes?",
+    "answerType": "Bar Chart",
+    "textAnswer": "As the temperature increases, the efficiency of the cooling tower decreases. At 10°C, the efficiency is 85%, which drops to 80% at 15°C and further decreases to 75% at 20°C.",
+    "chartSpec": {
+      "data": {
+        "values": [
+          {"x": "10°C", "y": 85},
+          {"x": "15°C", "y": 80},
+          {"x": "20°C", "y": 75}
+        ]
+      },
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "x", "type": "ordinal", "title": "Temperature"},
+        "y": {"field": "y", "type": "quantitative", "title": "Efficiency (%)"}
+      }
+    }
+  },
+  {
+    "question": "What is the ideal operating temperature for the cooling tower?",
+    "answerType": "Text",
+    "textAnswer": "The ideal operating temperature is between 25°C and 35°C, depending on the system design.",
+    "chartSpec": null
+  },
+  {
+    "question": "How often should the cooling tower undergo maintenance?",
+    "answerType": "Text",
+    
+    "textAnswer": "Cooling towers should undergo maintenance every three months for optimal performance.",
+    "chartSpec": null
+  },
+  {
+    "question": "What are the main components of a cooling tower?",
+    "answerType": "Text",
+    "textAnswer": "The main components of a cooling tower include the fan, heat exchange surface (fill media), water distribution system, and the basin where water collects.",
+    "chartSpec": null
+  },
+  {
+    "question": "What is the purpose of the fan in a cooling tower?",
+    "answerType": "Text",
+    "textAnswer": "The fan in a cooling tower helps to expel warm air from the system, allowing the cooled water to return to the system for reuse.",
+    "chartSpec": null
+  },
+  {
+    "question": "How does the water quality affect the performance of a cooling tower?",
+    "answerType": "Text",
+    "textAnswer": "Water quality directly impacts the performance of a cooling tower. High levels of scale, corrosion, or biological growth can reduce efficiency and increase maintenance needs.",
+    "chartSpec": null
+  },
+  {
+    "question": "What factors can lead to the fouling of a cooling tower?",
+    "answerType": "Text",
+    "textAnswer": "Fouling in a cooling tower can occur due to the accumulation of dirt, minerals, algae, or biological growth, which can block the heat exchange surfaces and reduce efficiency.",
+    "chartSpec": null
+  },
+  {
+    "question": "What is the typical lifespan of a cooling tower?",
+    "answerType": "Text",
+    "textAnswer": "The typical lifespan of a cooling tower is around 15 to 25 years, depending on the quality of maintenance and the environment in which it operates.",
+    "chartSpec": null
+  }
+]

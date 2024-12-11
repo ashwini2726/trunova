@@ -49,3 +49,34 @@
 .back-button:hover {
     color: #1e293b;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+    }
+
+    .preview-section, .form-section {
+        width: 100%;
+        padding: 1rem;
+        box-shadow: none; /* Remove box-shadow for smaller screens */
+    }
+
+    .preview-carousel {
+        height: 50vh; /* Limit height for mobile */
+    }
+}
+
+@media (max-width: 400px) {
+    .back-button {
+        padding: 0.3rem 0.5rem;
+    }
+
+    .preview-image {
+        object-fit: contain; /* Adjust image fit for small screens */
+    }
+
+    .form-section {
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+}
